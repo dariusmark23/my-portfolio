@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="EI-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Cruz Darius Marc C. - 2024</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Game/Mobile Development</p>
+                    <h1>Hi, I'm <span>Darius Marc Cruz</span> <br>From Philippines.</h1>
+                </div>
+            </div>
+        </div>
+        
+<!-- ----------------ABOUT---------------- -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I’m a Bachelor of Science in Mathematics with a Specialization in Computer Science, and I graduated at Bulacan State University last 07/18/24. 
+                            I am passionate about Game and Mobile Development, particularly using Unity and Godot engines. I have a strong foundation in programming 
+                            languages such as C++, C#, Java, GDScript, and Python. Additionally, I possess knowledge in computer hardware and software, including 
+                            assembly and disassembly, formatting, hardware/software troubleshooting, and more. I am also skilled in basic computer networking, such as 
+                            creating LAN cables, sharing files, and designing computer networks. I am eager to further develop my skills and am willing to undergo 
+                            training to enhance my expertise and contribute effectively to your team.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Game/Mobile Development</span>
+                                    <br>Developing 2D/3D Games using Unity/Godot Engines.</li>
+                                <li><span>Computer Hardware/Software</span><br>Troubleshoot Hardware/Software || Reformat || Assembly/Disassembly</li>
+                                <li><span>Basic Computer Network</span><br>LAN Cabling Assembly || Computer Network Design ||  Computer Sharing Files</li>
+                                <li><span>Microsoft Offices</span><br>Excel, Word, Powerpoint, etc.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Regional Trial Court (OJT) - Malolos (June 2023 - July 2023) </span>
+                                    <br>Docketing criminal cases in their database digitally and maintaning accurate record.
+                                <br> Assisting people regarding in their criminal number and cases.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bulacan State University (Main Campus)</span>
+                                    <br>Guinhawa, City of Malolos, Bulacan
+                                    <br>Bachelor of Science in Mathematics with Specialization in Computer Science
+                                    <br>2020-2024 </li>
+                                <li><span>Dr. Yanga's Colleges Inc.</span>
+                                    <br>182 MacArthur Hwy, Bocaue, 3018 Bulacan
+                                    <br>Information Communication Technology (ICT-techvoc)
+                                    <br>2018-2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ----------------Project----------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">College Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="Images/galactic-arithmetic/menu.png">
+                        <img class="slide" src="Images/galactic-arithmetic/about us.jpg">
+                        <img class="slide" src="Images/galactic-arithmetic/option.jpg">
+                    </div>
+                </div>
+                <div class="layer">
+                    <h3>Galactic Arithmetic 2D</h3>
+                    <p>Designed to help elementary students learn arithmetic concepts while promoting enjoyment and satisfaction, ensuring they gain the necessary knowledge.</p>
+                    <a href="#" class="play-btn" data-video="video1"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="Images/arithmetic-fury/arithmetic-fury.png">
+                        <img class="slide" src="Images/arithmetic-fury/arithmetic-fury-game.png">
+                        <img class="slide" src="Images/arithmetic-fury/arithmetic-fury-game2.png">
+                    </div>
+                </div>
+                <div class="layer">
+                    <h3>Arithmetic Fury</h3>
+                    <p>A 3D Survival-shooting game made with Unity and C# where the goal is to survive a swam of unknown entities.</p>
+                    <a href="#" class="play-btn" data-video="video2"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="videoModal" class="video-modal">
+    <div class="video-container">
+        <button class="close-btn">&times;</button>
+        <video id="video1" class="video-content" controls muted>
+            <source src="Images/galactic-arithmetic/Galactic Arithmetic 2D - Teaser.mp4" type="video/mp4">
+            Your browser does not support the video tag.    
+        </video>
+        <video id="video2" class="video-content" controls muted>
+            <source src="Images/arithmetic-fury/Arithmetic Fury (Trailer).mp4" type="video/mp4">
+            Your browser does not support the video tag.    
+        </video>
+    </div>
+</div>
+
+<!-- -------------------Contact-------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>cruzdariusmark@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>09101723379</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Dariusmark23/ "><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/cruz-darius-marc-c-12849628a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Darius Marc Cruz - Resume 2024.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>DMC © 2024</p>
+    </div>
+ </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");    
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNOk0uhPgxtapJNAc90u-j9Nt8RCnuIJrNjg-vdNFMN5jFjov6KMw5xJp07wlXCcSS4Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const playButtons = document.querySelectorAll('.play-btn');
+    const videoModal = document.getElementById('videoModal');
+    const closeButton = document.querySelector('.close-btn');
+    const videos = document.querySelectorAll('.video-content');
+
+    playButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const videoId = this.getAttribute('data-video');
+            const video = document.getElementById(videoId);
+            videos.forEach(v => {
+                if (v !== video) {
+                    v.pause();
+                    v.currentTime = 0;
+                    v.style.display = 'none';
+                } else {
+                    v.style.display = 'block';
+                }
+            });
+            videoModal.style.display = 'flex';
+            video.play();
+        });
+    });
+
+    closeButton.addEventListener('click', function() {
+        videoModal.style.display = 'none';
+        videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0;
+            video.style.display = 'none';
+        });
+    });
+
+    videoModal.addEventListener('click', function(event) {
+        if (event.target === videoModal) {
+            videoModal.style.display = 'none';
+            videos.forEach(video => {
+                video.pause();
+                video.currentTime = 0;
+                video.style.display = 'none';
+            });
+        }
+    });
+});
+
+    </script>
+    </body>
+</html>
